@@ -1,4 +1,5 @@
 GEM
+  remote: https://rubygems.org/
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
@@ -53,12 +54,14 @@ GEM
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     unicode-display_width (1.6.1)
+    wdm (0.1.1)
 
 PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
   jekyll
+  wdm
 
 BUNDLED WITH
-   2.1.2
+   2.1.4

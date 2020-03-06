@@ -21,7 +21,8 @@ title: Dashboard
           out_msg="Message received "+msg.payloadString+"<br>";
           out_msg=out_msg+"Message received Topic "+msg.destinationName;
           console.log(out_msg);
-          document.getElementById("lightstatus").innerHTML=out_msg;
+          status=msg.payloadString;
+          document.getElementById("lightstatus").innerHTML=status;
           
 
       }
@@ -64,6 +65,28 @@ title: Dashboard
       }
    
     </script>
+
+<p>A script on this page starts this clock:</p>
+<p id="demo"></p>
+
+<script>
+var myVar = setInterval(myTimer, 2000);
+
+function myTimer() {
+  var d = new Date();
+  var h=d.getHours();
+  var m=d.getMinutes();
+  document.getElementById("demo").innerHTML = d;
+  
+  if (h=="3" && status=="1") {
+    console.log("Turning OFf");
+    TurnOff();
+    }
+
+}
+</script>
+
+
 <button type="button" class="btn btn-outline-danger" onclick="TurnOn()">Turn On</button>
 <button type="button" class="btn btn-outline-dark" onclick="TurnOff()">Turn Off</button>
 <br>
