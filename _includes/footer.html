@@ -46,20 +46,17 @@
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
 						<h5 class="mb-4 font-weight-bold">LATEST UPDATES</h5>
-						<ul class="recent-post">
-							<li>
-								<label class="mr-3">28 <br><span>APR</span></label>
-								<span>Rendomised words which dont look eveable.</span>
-							</li>
-							<li>
-								<label class="mr-3">29 <br><span>APR</span></label>
-								<span>Rendomised words which dont look eveable.</span>
-							</li>
-							<li>
-								<label class="mr-3">30 <br><span>APR</span></label>
-								<span>Rendomised words which dont look eveable.</span>
-							</li>
-						</ul>
+						<ul>
+							{% for post in site.posts %}
+							  <li>
+								<h5><a href="{{ post.url }}">{{ post.title }}</a> </h5>
+								<p>{{ post.date | date_to_string }}</p>
+								<p>{{ post.excerpt }}</p>
+							  </li>
+							{% endfor %}
+						  </ul>
+
+
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
 						<h5 class="mb-4 font-weight-bold">CONNECT WITH US</h5>
@@ -68,7 +65,7 @@
 						  	<span class="input-group-addon" id="basic-addon2"><i class="fas fa-check"></i></span>
 						</div>
 						<ul class="social-pet mt-4">
-							<li><a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="https://www.facebook.com/hoangantech/" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
 							<li><a href="#" title="twitter"><i class="fab fa-twitter"></i></a></li>
 							<li><a href="#" title="google-plus"><i class="fab fa-google-plus-g"></i></a></li>
 							<li><a href="#" title="instagram"><i class="fab fa-instagram"></i></a></li>
@@ -83,7 +80,7 @@
 				<div class="row">
 					<div class="col-md-12 ">
 						<div class="text-center text-white">
-							&copy; 2018 Your Company. All Rights Reserved.
+							&copy; 2020 Hoang An Technology. All Rights Reserved.
 						</div>
 					</div>
 				</div>
