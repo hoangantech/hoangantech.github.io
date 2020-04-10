@@ -1,9 +1,10 @@
 ---
 layout: default
-title: Dashboard
+title: Dash board
 ---
-
-<body>
+    <!DOCTYPE html>
+    <html>
+    <head>
     <script src="js/mqttws31.js" type="text/javascript"> </script>
    <script type = "text/javascript" language = "javascript">
       var mqtt;
@@ -65,7 +66,9 @@ title: Dashboard
       }
    
     </script>
+</head>
 
+<body>
 <p>A script on this page starts this clock:</p>
 <p id="demo"></p>
 
@@ -94,5 +97,6 @@ function myTimer() {
 <a id="lightstatus"></a>
 <script>
     MQTTconnect();
-    </script>
+</script>
 </body>
+</html>
