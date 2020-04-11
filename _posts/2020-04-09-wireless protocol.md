@@ -23,9 +23,17 @@ LoRaWAN (long-range wide area network)
 
 Giao thức LoRaWAN cung cấp khoảng cách truyền thông xa nhất được dựa trên mô đun LoRa được phát triển bởi LoRa Alliance
 
-Mạng LoRaWAN được thiết kế cho các ứng dụng IoT với mục đích kết nối hàng ngàn cảm biến, mô-đun và thiết bị qua một mạng lớn.
+Mạng LoRaWAN được thiết kế cho các ứng dụng IoT với mục đích kết nối hàng ngàn cảm biến, mô-đun và thiết bị qua một mạng lớn. LoRaWAN được thiết kế nhằm tối ưu hóa LPWA cho tuổi thọ pin, dung lượng, phạm vi và chi phí.
 
+****Lora là gì?
 
+LoRa® là lớp vật lý hoặc mô đun không dây được sử dụng để tạo liên kết truyền thông tầm xa. Nhiều hệ thống không dây cũ sử dụng mô đun frequency shifting keying (FSK) làm lớp vật lý vì đây là mô đun rất hiệu quả để đạt được công suất thấp. LoRa® dựa trên mô đun chirp spread spectrum, duy trì các đặc tính công suất thấp giống như điều chế FSK nhưng làm tăng đáng kể phạm vi giao tiếp. Phổ chirp spread spectrum đã được sử dụng trong quân sự và không gian trong nhiều thập kỷ do khoảng cách liên lạc xa, nhưng LoRa® là mô đun chi phí thấp đầu tiên được sử dụng cho thương mại.
+
+****LoRaWAN là gì?
+
+LoRaWAN ™ định nghĩa giao thức truyền thông và kiến trúc hệ thống cho hệ thống mạng trong khi lớp vật lý LoRa® cho phép liên kết truyền thông tầm xa. Giao thức và kiến trúc mạng có ảnh hưởng lớn nhất trong việc xác định tuổi thọ pin của nút cảm biến, chất lượng dịch vụ, bảo mật và sự đa dạng của các ứng dụng được cung cấp bởi hệ thống mạng.
+
+****Tham khảo:
 
 D. Davcev, K. Mitreski, S. Trajkovic, V. Nikolovski and N. Koteli, "IoT agriculture system based on LoRaWAN," 2018 14th IEEE International Workshop on Factory Communication Systems (WFCS), Imperia, 2018, pp. 1-4.
 

@@ -3,7 +3,7 @@ layout: post
 author: Tien Cao-hoang
 tag: Tin học căn bản
 ---
-Hướng dẫn thao tác cơ bản trên phần mềm MS Word 2013 (Phần 1)
+Hướng dẫn thao tác cơ bản trên phần mềm MS Word 2013 (Phần 2)
 
 0:21 Định dạng đoạn văn bản (kẻ khung, tô nền)
 
