@@ -5,22 +5,22 @@ tag: Tin học căn bản
 ---
 Hướng dẫn thao tác cơ bản trên phần mềm MS Word 2013 (Phần 2)
 
-0:21 Định dạng đoạn văn bản (kẻ khung, tô nền)
+Một số thao tác với bảng, trộn thư, Style, tạo mục lục, vẽ hình
 
-7:24 Tạo ký hiệu đầu dòng bullet
+00:15 Tạo bảng 
 
-8:40 Đánh số thứ tự numbering
+02:17 Tạo chữ WordArt
 
-9:03 Văn bản dạng cột
+04:33 Chèn hình Insert/Picture
 
-11:23 Sử dụng điểm dùng Tab
+06:45 TRộn thư Mail Merge
 
-21:03 Tạo chữ nghệ thuật Word Art
+18:06 Style
 
-26:13 28:31 Vẽ hình Insert/Shape
+30:45 Tạo mục lục tự động
 
-32:08 Công thức toán học Insert/Equation
+35:35 Sử dụng Tab trong bảng
 
-36:10 Tạo bảng Table
+38:05 Vẽ hình 3D Insert/Shape
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TxmhlFolPn8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hCpcx-rB5cA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
