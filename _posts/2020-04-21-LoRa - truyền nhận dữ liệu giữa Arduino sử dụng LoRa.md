@@ -1,4 +1,8 @@
-
+---
+layout: post
+author: Tien Cao-hoang
+tag: Tin học căn bản
+---
 *** LoRa - Truyền nhận dữ liệu sử dụng LoRa
 
 Sử dụng công nghệ LoRa, các thiết bị có thể giao tiếp trong phạm vi 13-20Km với khả năng đi xa tới 80KM khi cài đặt ở chế độ light-of-signt. Phạm vi này đạt được ở mức năng lượng rất thấp giúp LoRa phù hợp hơn các giao thức truyền thông khác, đối với các thiết bị IoT chạy bằng pin, từ xa, có khả năng chạy trong nhiều tháng (hoặc nhiều năm) trong một lần sạc pin.
