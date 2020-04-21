@@ -3,7 +3,7 @@ layout: post
 author: Tien Cao-hoang
 tag: Tin học căn bản
 ---
-*** LoRa - Truyền nhận dữ liệu sử dụng LoRa
+### LoRa - Truyền nhận dữ liệu sử dụng LoRa
 
 Sử dụng công nghệ LoRa, các thiết bị có thể giao tiếp trong phạm vi 13-20Km với khả năng đi xa tới 80KM khi cài đặt ở chế độ light-of-signt. Phạm vi này đạt được ở mức năng lượng rất thấp giúp LoRa phù hợp hơn các giao thức truyền thông khác, đối với các thiết bị IoT chạy bằng pin, từ xa, có khả năng chạy trong nhiều tháng (hoặc nhiều năm) trong một lần sạc pin.
 
@@ -25,7 +25,7 @@ Demo này sử dụng giao tiếp Peer to Peer giữa hai thiết bị Arduino +
 
 ![Ra-02](/images/ra-02.png)
 
-*** Thiết bị sử dụng
+### Thiết bị sử dụng
 
 1. Arduino Zero x 1
 
@@ -33,11 +33,11 @@ Demo này sử dụng giao tiếp Peer to Peer giữa hai thiết bị Arduino +
 
 3. Mô đun Lora Ra-02 x 2
 
-*** Mô tả
+### Mô tả
 
 Trong demo này bao gồm 2 thiết bị gửi và nhận. Thiết bị gửi là Arduino Zero + Ra-02. Thiết bị nhận là Arduino Leonardo + Ra-02
 
-*** Nối dây
+### Nối dây
 
 1. Thiết bị gửi
 
@@ -69,14 +69,16 @@ Arduino Leonardo được kết nối với mô đun Ra-02 qua chuẩn  giao ti�
 |MISO         |MISO |
 |SCK          |SCK  |
 
-*** Code
+### Code
 
 - Cài đặt library: Mở Arduino IDE -> vào Tool/library manager -> gõ từ khóa LoRa -> Cài đặt gói thư viện LoRa by Sandeep Mistry
 
-![thu viện lora](/images/thu-vien-lora.png)
+![thu viện lora](/images/thu-vien-lora.PNG)
 
 1. Code cho Lora sender (Thiết bị gửi)
+
 ~~~
+
 #include <SPI.h>
 #include <LoRa.h>
 
@@ -109,11 +111,13 @@ void loop() {
 
   delay(5000);
 }
+
 ~~~
 
 2. Code cho LoRa Receiver (thiết bị nhận)
 
 ~~~
+
 #include <SPI.h>
 #include <LoRa.h>
 
@@ -146,9 +150,10 @@ void loop() {
     Serial.println(LoRa.packetRssi());
   }
 }
+
 ~~~
 
-*** Kết quả
+### Kết quả
 
 
 ![ket qua](/images/lora-ket-qua.PNG)
