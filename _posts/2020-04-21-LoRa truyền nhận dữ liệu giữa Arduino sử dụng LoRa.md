@@ -7,7 +7,7 @@ tag: Tin học căn bản
 
 Sử dụng công nghệ LoRa, các thiết bị có thể giao tiếp trong phạm vi 13-20Km với khả năng đi xa tới 80KM khi cài đặt ở chế độ light-of-signt. Phạm vi này đạt được ở mức năng lượng rất thấp giúp LoRa phù hợp hơn các giao thức truyền thông khác, đối với các thiết bị IoT chạy bằng pin, từ xa, có khả năng chạy trong nhiều tháng (hoặc nhiều năm) trong một lần sạc pin.
 
-[lora](/images/LoRa-COmpared-to-others.png)
+![lora](/images/LoRa-COmpared-to-others.png)
 
 LoRa có thể được sử dụng theo 2 phương án:
 
@@ -19,11 +19,11 @@ Peer to peer cho phép 2 thiết bị có mô đun LoRa giao tiếp với nhau n
 
 Để triển khai như một mạng diện rộng LPWAN. LoRaWAN là một chuẩn mạng công suất thấp, phạm vi rộng, dựa trên công nghệ LoRa.
 
-[cấu trúc mạng LPWAN](/images/LoRaWAN-Network-Architecture.png) 
+![cấu trúc mạng LPWAN](/images/LoRaWAN-Network-Architecture.png) 
 
 Demo này sử dụng giao tiếp Peer to Peer giữa hai thiết bị Arduino + mô đun LoRa Ra-02 Ai-Thinker
 
-[Ra-02](/images/ra-02.png)
+![Ra-02](/images/ra-02.png)
 
 *** Thiết bị sử dụng
 
@@ -73,7 +73,7 @@ Arduino Leonardo được kết nối với mô đun Ra-02 qua chuẩn  giao ti�
 
 - Cài đặt library: Mở Arduino IDE -> vào Tool/library manager -> gõ từ khóa LoRa -> Cài đặt gói thư viện LoRa by Sandeep Mistry
 
-[thu viện lora](/images/thu-vien-lora.png)
+![thu viện lora](/images/thu-vien-lora.png)
 
 1. Code cho Lora sender (Thiết bị gửi)
 ~~~
@@ -151,7 +151,7 @@ void loop() {
 *** Kết quả
 
 
-[ket qua](/images/lora-ket-qua.PNG)
+![ket qua](/images/lora-ket-qua.PNG)
 
 
 
