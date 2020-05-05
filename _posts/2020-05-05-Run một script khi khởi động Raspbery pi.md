@@ -16,16 +16,16 @@ Open a sample unit file using the command as shown below:
 
 Add in the following text :
 ~~~
- [Unit]
- Description=My Sample Service
- After=multi-user.target
+    [Unit]
+    Description=My Sample Service
+    After=multi-user.target
 
- [Service]
- Type=idle
- ExecStart=/usr/bin/python /home/pi/sample.py
+    [Service]
+    Type=idle
+    ExecStart=/usr/bin/python /home/pi/sample.py
 
- [Install]
- WantedBy=multi-user.target
+    [Install]
+    WantedBy=multi-user.target
  ~~~
 You should save and exit the nano editor.
 
