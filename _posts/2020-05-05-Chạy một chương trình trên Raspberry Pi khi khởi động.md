@@ -4,7 +4,7 @@ author: Tien Cao-hoang
 tag: Raspberry Pi
 ---
 
-### Chạy một chương trình trên Raspbery Pi khi khởi động (sử dụng SYSTEMD)
+Chạy một chương trình trên Raspbery Pi khi khởi động (sử dụng SYSTEMD)
 
 The fourth method to run a program on your Raspberry Pi at startup is to use the systemd files. systemd provides a standard process for controlling what programs run when a Linux system boots up. Note that systemd is available only from the Jessie versions of Raspbian OS.
 
@@ -15,7 +15,8 @@ Open a sample unit file using the command as shown below:
 `sudo nano /lib/systemd/system/sample.service`
 
 Add in the following text :
-~~~
+
+>
     [Unit]
     Description=My Sample Service
     After=multi-user.target
@@ -26,7 +27,7 @@ Add in the following text :
 
     [Install]
     WantedBy=multi-user.target
- ~~~
+
 You should save and exit the nano editor.
 
 Configure systemd Run a Program On Your Raspberry Pi At Startup
@@ -45,7 +46,7 @@ The permission on the unit file needs to be set to 644 :
 
 Now the unit file has been defined we can tell systemd to start it during the boot sequence :
 
-
+>
     sudo systemctl daemon-reload
     sudo systemctl enable sample.service
 
