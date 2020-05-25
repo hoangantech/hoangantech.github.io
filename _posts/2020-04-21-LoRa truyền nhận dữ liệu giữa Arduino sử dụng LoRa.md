@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Tien Cao-hoang
-categories: LoRa technology
+categories: [LoRa technology]
 tag: LoRa
 ---
 LoRa - Truyền nhận dữ liệu giữa Arduino sử dụng LoRa
