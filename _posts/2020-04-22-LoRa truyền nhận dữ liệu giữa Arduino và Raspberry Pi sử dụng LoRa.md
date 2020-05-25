@@ -34,4 +34,39 @@ LoRa - Truyền nhận dữ liệu giữa Arduino và Raspberry Pi sử dụng L
 
 ![](/images/rasp-pin.png)
 
+### PyLoRa cho Raspberry Pi
+
+Bài viết này chủ yếu là giao tiếp Peer to Peer giữa 2 module lora (Raspberry Pi và Arduino). Đối với Raspberry Pi sử dụng thư viện PyLoRa.
+
+- Cấu hình cho Raspberry Pi
+
+Mô đun LoRa Ra-02 kết nối với Raspberry Pi bằng chuẩn giao tiếp SPI, nên ta cần cấu hình cho Raspberry Pi bật giao tiếp SPI, sau  đó cài đặt  pylora package.
+
+`sudo raspi-config
+
+Di chuyến đến mục Interfacing Options sau đó enable SPI
+
+- Kiểm tra pip và python đã được update
+
+- Cài đặt RPi.GPIO
+
+`pip install RPi.GPIO
+
+package này giúp chúng ta điều khiển các chân GPIO của Raspberry Pi
+
+- Cài đặt spidev
+`pip install spidev
+
+package này giúp điều khiển SPI
+
+![](/images/lora_pip.JPG)
+
+- Download và cài đặt  python-rpi.gpio package và spidev package
+
+`sudo apt-get install python-rpi.gpio python3-rpi.gpio
+
+`sudo apt-get install python-spidev python3-spidev
+
+
+
 https://circuitdigest.com/microcontroller-projects/raspberry-pi-with-lora-peer-to-peer-communication-with-arduino
