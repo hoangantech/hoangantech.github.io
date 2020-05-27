@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Tien Cao-hoang
-categories: [LoRa technology]
+categories: [LoRa technology, Arduino]
 tag: LoRa
 ---
 LoRa - Truyền nhận dữ liệu giữa Arduino và Raspberry Pi sử dụng LoRa
