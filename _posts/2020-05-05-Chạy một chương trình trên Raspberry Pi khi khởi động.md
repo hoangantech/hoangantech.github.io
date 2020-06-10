@@ -6,15 +6,15 @@ tag: Raspberry Pi
 
 Chạy một chương trình trên Raspbery Pi khi khởi động (sử dụng SYSTEMD)
 
-The fourth method to run a program on your Raspberry Pi at startup is to use the systemd files. systemd provides a standard process for controlling what programs run when a Linux system boots up. Note that systemd is available only from the Jessie versions of Raspbian OS.
+Giả sử bạn có một chương trình python (1 file sample.py trong thư mục /home/pi/ ). Để chạy được file này khi khởi động Raspberry Pi, ta có thể sử dụng file systemd. systemd cung cấp một chuẩn xử lý cho phép điều khiển một chương trình có thể chạy trong hệ thống Linux khi khởi động. Lưu ý: systemd chỉ có từ phiên bản Jessie của Raspbian OS.
 
-#### Step 1– Create A Unit File
+#### Step 1– Tạo một Unit file
 
-Open a sample unit file using the command as shown below:
+Tạo một unit file có tên sample.service bằng lệnh:
 
 `sudo nano /lib/systemd/system/sample.service`
 
-Add in the following text :
+Thêm các dòng lệnh bên dưới vào file :
 
 >
     [Unit]
@@ -28,33 +28,32 @@ Add in the following text :
     [Install]
     WantedBy=multi-user.target
 
-You should save and exit the nano editor.
+Lưu và thoát khỏi nano.
 
-Configure systemd Run a Program On Your Raspberry Pi At Startup
+Cấu hình cho systemd chạy một chương trình khi khởi động.
 
-This defines a new service called “Sample Service” and we are requesting that it is launched once the multi-user environment is available. The “ExecStart” parameter is used to specify the command we want to run. The “Type” is set to “idle” to ensure that the ExecStart command is run only when everything else has loaded. Note that the paths are absolute and define the complete location of Python as well as the location of our Python script.
+File này sẽ tạo một dịch vụ mới (new service) có tên “Sample Service” và dịch vụ này được thực thi sau khi môi trường multi-user được khởi tạo. “ExecStart” xác định lệnh mà chúng ta muốn chạy. “Type” được cài là “idle” để chắc chắn rằng lệnh ExecStart được chạy khi tất cả các dịch vụ khác đã được khởi tạo.
 
-In order to store the script’s text output in a log file you can change the ExecStart line to:
+Để lưu output của chương trình (script) vào file log bạn có thể đổi ExecStart thành:
 
 `ExecStart=/usr/bin/python /home/pi/sample.py > /home/pi/sample.log 2>&1`
 
-The permission on the unit file needs to be set to 644 :
+Chọn permission cho unit file là 644 :
 
 `sudo chmod 644 /lib/systemd/system/sample.service`
 
-#### Step 2 – Configure systemd
+#### Step 2 – Cấu hình cho systemd
 
-Now the unit file has been defined we can tell systemd to start it during the boot sequence :
+Sau khi đã định nghĩa file unit bạn có thể bật dịch vụ mình vừa mới tạo bằng lệnh sau:
 
 >
    ` sudo systemctl daemon-reload`
     `sudo systemctl enable sample.service`
 
 
-Reboot the Pi and your custom service should run:
+Reboot lại Raspberry Pi, lúc này chương trình của bạn sẽ được chạy khi khởi động:
 
 ```
 sudo reboot
 ```
 
-Configure systemd Run a Program On Your Raspberry Pi At Startup

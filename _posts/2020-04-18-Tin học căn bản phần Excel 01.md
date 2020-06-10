@@ -1,6 +1,7 @@
 ---
 layout: post
 author: Tien Cao-hoang
+categories: [Tin học căn bản]
 tag: Tin học căn bản
 ---
 Hướng dẫn thao tác cơ bản trên phần mềm MS Excel 2013 (Phần 01)

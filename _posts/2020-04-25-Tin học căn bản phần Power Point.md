@@ -1,6 +1,7 @@
 ---
 layout: post
 author: Tien Cao-hoang
+categories: [Tin học căn bản]
 tag: Tin học căn bản
 ---
 
