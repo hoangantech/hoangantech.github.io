@@ -10,9 +10,12 @@ title: Dash board
       var mqtt;
       var reconnectTimeout = 2000;
       //var host="192.168.1.206"; //change this
-      var host="broker.mqtt-dashboard.com"
-      var port=8000
-      //var port=9001;
+	  
+      //var host="broker.mqtt-dashboard.com"
+      //var port=8000
+	  
+	  var host="iot.eclipse.org"
+      var port=443;
       
       function onFailure(message) {
           console.log("Connection Attempt to Host "+host+"Failed");
