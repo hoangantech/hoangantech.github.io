@@ -5,7 +5,10 @@ categories: [FPGA]
 tag: FPGA
 ---
 ## Tạo IP block trong Vivado
-![vivado ip block](vivado-ip-block.JPG)
+![Hardware architecture ](/images/microblaze.JPG)
+source: 
+
+![vivado ip block](/images/vivado-ip-block.JPG)
 
 [file IP block design](/docs/design_1.pdf)
 
