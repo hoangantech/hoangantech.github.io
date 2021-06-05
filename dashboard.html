@@ -11,11 +11,8 @@ title: Dash board
       var reconnectTimeout = 2000;
       //var host="192.168.1.206"; //change this
 	  
-      //var host="broker.mqtt-dashboard.com"
-      //var port=8000
-	  
-	  var host="iot.eclipse.org"
-      var port=443;
+      var host="broker.mqtt-dashboard.com"
+      var port=8000
       
       function onFailure(message) {
           console.log("Connection Attempt to Host "+host+"Failed");
@@ -26,7 +23,12 @@ title: Dash board
           out_msg=out_msg+"Message received Topic "+msg.destinationName;
           console.log(out_msg);
           status=msg.payloadString;
-          document.getElementById("lightstatus").innerHTML=status;
+		  var state ="";
+		  if (status == "1"){
+		  state="ON";
+		  }
+		  else state ="OFF"
+          document.getElementById("lightstatus").innerHTML=state;
           
 
       }
